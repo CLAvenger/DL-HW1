@@ -1,0 +1,33 @@
+.container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-section,
+        .right-section {
+            flex: 1;
+        }
+body {
+            /* display: flex; */
+            /* justify-content: left; */
+            /* align-items: left; */
+            /* height: 100vh; */
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            /* max-width: 20%; */
+        }
+
+table {
+    width: 20%;
+    max-width: 20%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    }
+
+        td:nth-child(2) {
+            text-align: right;
+        }
+        td:nth-child(1) {
+            text-align: left;
+        }
