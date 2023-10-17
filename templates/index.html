@@ -34,12 +34,6 @@
 				<tbody>
 					<tr>
 						<td>
-							<!-- {% if symbol %}
-							{{symbol}}
-							{% else %}
-							N/A
-							{% endif %}
-							℃ -->
 							比重
 						</td>
 						<td>
@@ -77,7 +71,7 @@
 						</td>
 						<td>
 							{% if prop and prop.melt %}
-							{{prop.melt}}K,{{prop.melt_c}}℃,{{prop.melt_f}}°F
+							{{prop.melt}}K,{{prop.melt|convert_K2C}}℃,{{prop.melt|convert_K2F}}°F
 							{% elif prop %}
 							N/A
 							{% endif %}
@@ -89,7 +83,7 @@
 						</td>
 						<td>
 							{% if prop and prop.boil %}
-							{{prop.boil}}K,{{prop.boil_c}}℃,{{prop.boil_f}}°F
+							{{prop.boil}}K,{{prop.boil|convert_K2C}}℃,{{prop.boil|convert_K2F}}°F
 							{% elif prop %}
 							N/A
 							{% endif %}
